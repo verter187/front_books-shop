@@ -1,3 +1,3 @@
-export {default} from './Authors';
+export {default} from './GetBookPage';
 
  
