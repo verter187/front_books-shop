@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React from "react";
 import Header from "../Pages/Header/Header";
 import Welcome from "../Pages/Welcome/Welcome";
 import AuthorsBook from "../Pages/AuthorsBook/AuthorsBook";
@@ -8,22 +8,22 @@ import GetBookPage from "../Pages/GetBookPage/GetBookPage";
 import Topics from "../Pages/Topics/Topics";
 import Articles from "../Pages/Articles/Articles";
 import Footer from "../Pages/Footer/Footer";
- 
+import s from "./App.module.sass";
+
 function App() {
   return (
-    <div className="App">
-     <Header/>
-     <Welcome/>
-     <AuthorsBook/>
-     <AboutAuthor/>
-     <Achievements/> 
-     <GetBookPage/> 
-     <Topics/> 
-     <Articles/> 
-     <Footer/> 
+    <div className={s.App}>
+      <Header />
+      <Welcome />
+      <AuthorsBook />
+      <AboutAuthor />
+      <Achievements />
+      <GetBookPage />
+      <Topics />
+      <Articles />
+      <Footer />
     </div>
   );
 }
 
 export default App;
- 
