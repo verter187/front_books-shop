@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
 import Header from "../Pages/Header/Header";
 import Welcome from "../Pages/Welcome/Welcome";
 import AuthorsBook from "../Pages/AuthorsBook/AuthorsBook";
@@ -9,8 +10,17 @@ import Topics from "../Pages/Topics/Topics";
 import Articles from "../Pages/Articles/Articles";
 import Footer from "../Pages/Footer/Footer";
 import s from "./App.module.sass";
+import { getBooks } from "../../requests";
 
+console.log();
 function App() {
+  const [state, setState] = useState([]);
+
+  useEffect(() => {
+    getBooks(setState);
+  }, []);
+
+  console.log(state);
   return (
     <div className={s.App}>
       <Header />
