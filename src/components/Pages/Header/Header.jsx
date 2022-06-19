@@ -2,16 +2,8 @@ import React from "react";
 import Button from "../../UI/Button/Button";
 import s from "./Header.module.sass";
 import logo from "../../../img/bookmarks.svg";
-import SocIcon from "../../UI/SocIcon/SocIcon";
-import {
-  faLinkedinIn,
-  faFacebookF,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import MenuButton from "../../UI/MenuButton/MenuButton";
+import SocIconPanel from "../../UI/SocIconPanel/SocIconPanel";
 import Navbar from "../Header/Navbar/Navbar";
-
-const socials = [faFacebookF, faTwitter, faLinkedinIn];
 
 export default function Header() {
   return (
@@ -24,11 +16,7 @@ export default function Header() {
                 <img src={logo} alt="logo" />
                 Pages
               </a>
-              <div className={s.social_icons}>
-                <SocIcon icon={faFacebookF} />
-                <SocIcon icon={faTwitter} />
-                <SocIcon icon={faLinkedinIn} />
-              </div>
+              <SocIconPanel />
             </div>
             <Navbar />
             <Button>Order Today</Button>
