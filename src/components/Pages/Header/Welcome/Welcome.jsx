@@ -1,8 +1,8 @@
 import React from "react";
 import s from "./Welcome.module.sass";
-import books_img from "../../../img/dark_light.png";
-import Button from "../../UI/Button/Button";
-import Block from "../../UI/Block/Block";
+import books_img from "../../../../img/dark_light.png";
+import Button from "../../../UI/Button/Button";
+import Block from "../../../UI/Block/Block";
 
 export default function Welcome() {
   return (

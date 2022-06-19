@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 import Header from "../Pages/Header/Header";
-import Welcome from "../Pages/Welcome/Welcome";
 import AuthorsBook from "../Pages/AuthorsBook/AuthorsBook";
 import AboutAuthor from "../Pages/AboutAuthor/AboutAuthor";
 import Achievements from "../Pages/Achievements/Achievements";
@@ -24,7 +23,6 @@ function App() {
   return (
     <div className={s.App}>
       <Header />
-      <Welcome />
       <AuthorsBook books />
       <AboutAuthor />
       <Achievements />
