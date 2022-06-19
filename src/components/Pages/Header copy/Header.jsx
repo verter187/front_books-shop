@@ -1,15 +1,15 @@
 import React from "react";
-import Button from "../../UI/Button/Button";
+import Button from "../../../UI/Button/Button";
 import s from "./Header.module.sass";
 import logo from "../../../img/bookmarks.svg";
-import SocIcon from "../../UI/SocIcon/SocIcon";
+import SocIcon from "../../../UI/SocIcon/SocIcon";
 import {
   faLinkedinIn,
   faFacebookF,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import MenuButton from "../../UI/MenuButton/MenuButton";
-import Navbar from "../Header/Navbar/Navbar";
+
+import Navbar from "../Header/Navbar";
 
 const socials = [faFacebookF, faTwitter, faLinkedinIn];
 
