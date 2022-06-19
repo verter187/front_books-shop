@@ -2,12 +2,15 @@ import React from "react";
 import Button from "../../UI/Button/Button";
 import s from "./Header.module.sass";
 import logo from "../../../img/bookmarks.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import SocIcon from "../../UI/SocIcon/SocIcon";
 import {
   faLinkedinIn,
   faFacebookF,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import MenuButton from "../../UI/MenuButton/MenuButton";
+
+const socials = [faFacebookF, faTwitter, faLinkedinIn];
 
 export default function Header() {
   return (
@@ -21,46 +24,17 @@ export default function Header() {
                 Pages
               </a>
               <div className={s.social_icons}>
-                <div>
-                  <a href="#">
-                    <FontAwesomeIcon icon={faFacebookF} size="1x" />
-                  </a>
-                </div>
-                <div>
-                  <a href="#">
-                    <FontAwesomeIcon icon={faTwitter} size="1x" />
-                  </a>
-                </div>
-                <div>
-                  <a href="#">
-                    <FontAwesomeIcon icon={faLinkedinIn} size="1x" />
-                  </a>
-                </div>
+                <SocIcon icon={faFacebookF} />
+                <SocIcon icon={faTwitter} />
+                <SocIcon icon={faLinkedinIn} />
               </div>
             </div>
-
             <div>
               <ul className={s.menu}>
-                <li className={s.menu_item}>
-                  <a href="#" className={s.menu_link}>
-                    Home
-                  </a>
-                </li>
-                <li className={s.menu_item}>
-                  <a href="#" className={s.menu_link}>
-                    About
-                  </a>
-                </li>
-                <li className={s.menu_item}>
-                  <a href="#" className={s.menu_link}>
-                    Pages
-                  </a>
-                </li>
-                <li className={s.menu_item}>
-                  <a href="#" className={s.menu_link}>
-                    Contact Us
-                  </a>
-                </li>
+                <MenuButton>Home</MenuButton>
+                <MenuButton>About</MenuButton>
+                <MenuButton>Pages</MenuButton>
+                <MenuButton>Contact Us</MenuButton>
               </ul>
             </div>
             <Button>Order Today</Button>

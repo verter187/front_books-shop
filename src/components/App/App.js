@@ -14,18 +14,18 @@ import { getBooks } from "../../requests";
 
 console.log();
 function App() {
-  const [state, setState] = useState([]);
+  const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    getBooks(setState);
+    getBooks(setBooks);
   }, []);
 
-  console.log(state);
+  console.log(books);
   return (
     <div className={s.App}>
       <Header />
       <Welcome />
-      <AuthorsBook />
+      <AuthorsBook books />
       <AboutAuthor />
       <Achievements />
       <GetBookPage />
