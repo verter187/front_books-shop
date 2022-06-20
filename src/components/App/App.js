@@ -11,7 +11,6 @@ import Footer from "../Pages/Footer/Footer";
 import s from "./App.module.sass";
 import { getBooks, getPartners, getTopics, getArticles } from "../../requests";
 
-console.log();
 function App() {
   const [books, setBooks] = useState([]);
   const [partners, setPartners] = useState([]);
@@ -35,6 +34,10 @@ function App() {
   }, []);
 
   console.log(books);
+  console.log(partners);
+  console.log(topics);
+  console.log(articles);
+
   return (
     <div className={s.App}>
       <Header />
