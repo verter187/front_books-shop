@@ -9,18 +9,18 @@ export default function Welcome() {
     <div className={s.welcome}>
       <div className={s.container}>
         <div className={s.welcome_info}>
-          <h3>Welcome To Pages!!!</h3>
+          <p className={s.welcome_title}>Welcome To Pages!!!</p>
           <h2>Your Books From</h2>
           <h2>The Best Writer.</h2>
-          <p>
-            We believe that reading books are essential to a healthy culture.
-          </p>
-          <p>
-            We believe that reading books are essential to a healthy culture.
-          </p>
-          <div>
+          <div className={s.welcome_text}>
+            <p>
+              We believe that reading books are essential to a healthy culture.
+            </p>
+            <p>They’re where authors can connect with readers.</p>
+          </div>
+          <div className={s.welcome_button}>
             <Button>Order Today</Button>
-            <a href="#">Readv Free Demo</a>
+            <a href="#">Ready Free Demo</a>
           </div>
           <div className={s.blocks}>
             <Block title="Pages" text="250pages" />

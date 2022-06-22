@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import Header from "../Pages/Header/Header";
-import AuthorsBook from "../Pages/AuthorsBook/AuthorsBook";
+import AuthorsBooks from "../Pages/AuthorsBooks/AuthorsBooks";
 import AboutAuthor from "../Pages/AboutAuthor/AboutAuthor";
 import Partners from "../Pages/Partners/Partners";
 import GetBookPage from "../Pages/GetBookPage/GetBookPage";
@@ -41,7 +41,7 @@ function App() {
   return (
     <div className={s.App}>
       <Header />
-      <AuthorsBook books={books} />
+      <AuthorsBooks books={books} />
       <AboutAuthor />
       <Partners partners={partners} />
       <GetBookPage />

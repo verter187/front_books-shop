@@ -8,15 +8,70 @@
     padding: 78px 75px 109px 60px
     height: 800px
     background-color: #1B3764
+
+    &_info
+        margin-top: 175px
+        margin-left: 60px
+
     h2
         font-family: 'Cardo'
         font-style: normal
+        color: #FFFFFF
+        margin-top: 0
+        margin-bottom: 0
         font-weight: 400
         font-size: 64px
         line-height: 78px
         letter-spacing: 1.3px
-        color: #FFFFFF
+    &_button
+        a
+            margin-left: 37px
+            font-family: 'Cardo'
+            font-style: normal
+            font-weight: 400
+            font-size: 19px
+            line-height: 30px
+            letter-spacing: 0.38px
+            text-transform: capitalize
+            color: #FFFFFF
+            text-decoration: none
+            padding-bottom: 3px
+            border-bottom: 1px solid #FFFFFF
 
+    &_title
+        font-family: 'Cardo'
+        font-style: normal
+        font-weight: 400
+        font-size: 21px
+        line-height: 36px
+        letter-spacing: 1.2px
+        text-transform: capitalize
+        color: #FFFFFF
+        padding-left: 48px
+        font-weight: 400
+        font-size: 21px
+        line-height: 36px
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            height: 2px
+            width: 35px
+            left: -1px
+            top: 12px
+            background-color: #FFCA42
+    &_text
+        margin-top: 25px
+        margin-bottom: 30px
+    p
+        margin-top: 0
+        margin-bottom: 0
+        font-family: 'Inter'
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 28px
+        color: #B4C7E7
 .blocks
     display: flex
     justify-content: space-between
