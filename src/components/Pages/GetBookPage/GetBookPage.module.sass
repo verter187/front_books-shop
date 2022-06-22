@@ -1,1 +1,73 @@
+.container
+    width: 1440px
+    margin: 0 auto
+    display: flex
+    justify-content: space-around
 
+.title
+    width: 420px
+    height: 51px
+    margin: 0 auto
+    position: relative
+    font-family: 'Cardo'
+    font-style: normal
+    font-weight: 400
+    font-size: 45px
+    line-height: 54px
+    text-transform: capitalize
+    color: #FFFFFF
+    &::after
+        content: ''
+        position: absolute
+        height: 3px
+        width: 50px
+        top: 202px
+        left: 230px
+        background-color: #FFCA42
+
+.book_page
+    padding: 78px 75px 109px 60px
+    height: 800px
+    background-color: #1B3764
+
+    &_info
+        margin-top: 175px
+        margin-left: 60px
+
+    h2
+        font-family: 'Cardo'
+        font-style: normal
+        color: #FFFFFF
+        margin-top: 0
+        margin-bottom: 0
+        font-weight: 400
+        font-size: 64px
+        line-height: 78px
+        letter-spacing: 1.3px
+    &_button
+        a
+            margin-left: 37px
+            font-family: 'Cardo'
+            font-style: normal
+            font-weight: 400
+            font-size: 19px
+            line-height: 30px
+            letter-spacing: 0.38px
+            text-transform: capitalize
+            color: #FFFFFF
+            text-decoration: none
+            padding-bottom: 3px
+            border-bottom: 1px solid #FFFFFF
+
+    &_text
+        margin-top: 25px
+        margin-bottom: 30px
+    p
+        margin-top: 0
+        margin-bottom: 0
+        font-family: 'Inter'
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 28px
+        color: #B4C7E7
