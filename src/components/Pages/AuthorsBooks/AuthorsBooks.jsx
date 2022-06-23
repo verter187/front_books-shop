@@ -6,7 +6,6 @@ import Title from "../../UI/Title";
 export default function AuthorsBooks({ books }) {
   return (
     <>
-      {/* <div className={s.title}>The Author’s Book</div> */}
       <Title>The Author’s Book</Title>
       <div className={s.author_books}>
         <div className={s.container}>

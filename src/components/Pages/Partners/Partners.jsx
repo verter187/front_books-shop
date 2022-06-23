@@ -6,7 +6,6 @@ import Title from "../../UI/Title";
 export default function Partners({ partners }) {
   return (
     <>
-      {/* <div className={s.title}>Trusted By The Best</div> */}
       <Title>Trusted By The Best</Title>
       <div className={s.partners}>
         <div className={s.container}>
