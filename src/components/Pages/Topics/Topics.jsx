@@ -2,11 +2,13 @@ import React from "react";
 import s from "./Topics.module.sass";
 import Topic from "../../Topic";
 import topics_img from "../../../img/topics.png";
+import Title from "../../UI/Title";
 
 export default function Topics({ topics }) {
   return (
     <>
-      <div className={s.title}>What Will You Learn?</div>
+      {/* <div className={s.title}>What Will You Learn?</div> */}
+      <Title>What Will You Learn?</Title>
       <div className={s.topics}>
         <div className={s.container}>
           {topics.map((topic, i) => (
