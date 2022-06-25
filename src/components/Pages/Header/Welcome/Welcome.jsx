@@ -5,6 +5,21 @@ import Button from "../../../UI/Button/Button";
 import Block from "../../../UI/Block/Block";
 
 export default function Welcome() {
+  const blockItems = [
+    {
+      title: "Pages:",
+      text: "250 pages",
+    },
+    {
+      title: "Length:",
+      text: "10 Hours",
+    },
+    {
+      title: "Rating:",
+      text: "4.5/5 (305 rating)",
+    },
+  ];
+
   return (
     <div className={s.welcome}>
       <div className={s.container}>
@@ -23,9 +38,9 @@ export default function Welcome() {
             <a href="#">Ready Free Demo</a>
           </div>
           <div className={s.blocks}>
-            <Block title="Pages" text="250pages" />
-            <Block title="Length" text="10 Hours" />
-            <Block title="Rating" text="4.5/5 (305 rating)" />
+            {blockItems.map((blockItem, i) => (
+              <Block key={i} {...blockItem} />
+            ))}
           </div>
         </div>
         <div className={s.books_face}>
