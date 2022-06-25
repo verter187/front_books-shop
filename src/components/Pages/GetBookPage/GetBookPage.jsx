@@ -1,14 +1,14 @@
 import React from "react";
 import s from "./GetBookPage.module.sass";
 import books_img from "../../../img/get_book.png";
-import Title from "../../UI/Title";
+import Title2 from "../../UI/Title2";
 
 export default function GetBookPage() {
   return (
     <div className={s.book_page}>
       <div className={s.container}>
         <div className={s.book_page_info}>
-          <Title style={{ color: "#FFFFFF" }}>Get Book Copy Today!</Title>
+          <Title2 style={{ color: "#FFFFFF" }}>Get Book Copy Today!</Title2>
           {/* <div className={s.title}>Get Book Copy Today!</div> */}
 
           <p>

@@ -6,10 +6,11 @@ import Title from "../../UI/Title";
 
 export default function Topics({ topics }) {
   return (
-    <>
+    <div className={s.topics}>
       <Title>What Will You Learn?</Title>
-      <div className={s.topics}>
-        <div className={s.container}>
+
+      <div className={s.container}>
+        <div className={s.topics_info}>
           {topics.map((topic, i) => (
             <Topic key={i} {...topic} />
           ))}
@@ -18,6 +19,6 @@ export default function Topics({ topics }) {
           <img src={topics_img} alt="topics" />
         </div>
       </div>
-    </>
+    </div>
   );
 }
