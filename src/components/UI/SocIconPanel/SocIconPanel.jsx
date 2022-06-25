@@ -8,10 +8,20 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
-export default function SocIconPanel({ footer = false, showInsta = false }) {
+export default function SocIconPanel({
+  footer = false,
+  showInstagram = false,
+}) {
+  const arrIcons = [faFacebookF, faTwitter, faLinkedinIn];
+  if (showInstagram) {
+    console.log(showInstagram);
+    arrIcons.push(faInstagram);
+  }
+
   let iconSize = footer ? "55px" : "45px",
     styleIcon = {
       borderColor: footer ? "#FFCA42" : "",
+      backgroundColor: footer ? "#1B3764" : "#FFFFFF",
       width: iconSize,
       height: iconSize,
     },
@@ -19,14 +29,14 @@ export default function SocIconPanel({ footer = false, showInsta = false }) {
 
   return (
     <div className={s.social_icons}>
-      <SocIcon icon={faFacebookF} styleIcon={styleIcon} styleRef={styleRef} />
-      <SocIcon icon={faTwitter} styleIcon={styleIcon} styleRef={styleRef} />
-      <SocIcon icon={faLinkedinIn} styleIcon={styleIcon} styleRef={styleRef} />
-      {showInsta ? (
-        <SocIcon icon={faInstagram} styleIcon={styleIcon} styleRef={styleRef} />
-      ) : (
-        ""
-      )}
+      {arrIcons.map((icon, i) => (
+        <SocIcon
+          key={i}
+          icon={icon}
+          styleIcon={styleIcon}
+          styleRef={styleRef}
+        />
+      ))}
     </div>
   );
 }
