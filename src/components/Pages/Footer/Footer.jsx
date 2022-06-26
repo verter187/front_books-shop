@@ -32,26 +32,32 @@ export default function Footer() {
 
   return (
     <div className={s.footer}>
-      <div className={s.container}>
-        <div>
-          <Logo />
+      <div>
+        <Logo />
+        <div className={s.socIcons}>
           <SocIconPanel footer={true} showInstagram={true} />
-          {arrItems.map((item, i) => {
-            return (
-              <div key={i}>
-                <h3>{item.title}</h3>
-                {item.items.map((litem, k) => (
-                  <ListItem key={k}>{litem}</ListItem>
-                ))}
-              </div>
-            );
-          })}
-          <h2>Keep in Touch</h2>
-          <div className={s.contacts}>
-            {Object.keys(objInfo).map((infoId) => (
-              <div key={infoId}>{`${infoId}: ${objInfo[infoId]}`}</div>
+        </div>
+      </div>
+
+      {arrItems.map((item, i) => {
+        return (
+          <div key={i}>
+            <h2>{item.title}</h2>
+            {item.items.map((litem, k) => (
+              <ListItem key={k}>{litem}</ListItem>
             ))}
           </div>
+        );
+      })}
+      <div>
+        <h2>Keep in Touch</h2>
+        <div className={s.contacts}>
+          {Object.keys(objInfo).map((infoId, i) => (
+            <div key={i}>
+              <h3>{`${infoId}:`}</h3>
+              <p>{`${objInfo[infoId]}`}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

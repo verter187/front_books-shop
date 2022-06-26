@@ -15,7 +15,7 @@ export default function Topics({ topics }) {
             <Topic key={i} {...topic} />
           ))}
         </div>
-        <div className={s.books_face}>
+        <div className={s.topics_img}>
           <img src={topics_img} alt="topics" />
         </div>
       </div>

@@ -6,7 +6,7 @@ import Title from "../../UI/Title";
 export default function Partners({ partners }) {
   return (
     <div className={s.partners}>
-      <Title>Trusted By The Best</Title>
+      <Title>Articles & Resources</Title>
       <div className={s.container}>
         <div className={s.partners_cards}>
           {partners.map((partner, i) => (
